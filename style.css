@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     display: grid;
-    grid-template: 1fr 5fr/ 1fr 5fr;
+    grid-template: 1fr 6fr/ 1fr 4fr;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,6 +28,7 @@ ul {
 
 #sidebar-header {
     margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 #sidebar-communities {
@@ -53,9 +54,45 @@ li p {
 
 
 .header {
-    background-color: lightgray;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    box-shadow: 0 3px 5px rgb(57, 63, 72, 0.3);
+    z-index: 1;
+    padding: 15px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.search {
+    flex: 1;
+}
+
+input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.icons, .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.icons img {
+    height: 32px;
+    border-radius: 50%;
 }
 
 .main-content {
