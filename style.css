@@ -86,13 +86,49 @@ input:focus {
 .icons, .search {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     font-weight: bold;
 }
 
 .icons img {
     height: 32px;
     border-radius: 50%;
+}
+
+.bottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-msg {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.welcome-msg img {
+    height: 48px;
+    border-radius: 50%;
+}
+
+#welcome-msg-name {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    min-width: 5rem;
+    min-height: 2rem;
 }
 
 .main-content {
