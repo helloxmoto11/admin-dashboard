@@ -132,7 +132,33 @@ button {
 }
 
 .main-content {
-    background-color: darkgray;
+    background-color: lightgray;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.left {
+    background-color: yellow;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 15px;
+}
+
+.right {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: grid;
+}
+
+.announcements {
+    background-color: pink;
+    padding: 15px;
+}
+
+.trending {
+    background-color: red;
+    padding: 15px;
 }
