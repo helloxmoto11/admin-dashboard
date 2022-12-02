@@ -146,6 +146,12 @@ button {
     padding: 15px;
 }
 
+.left > p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .card-container {
     display: grid;
     grid-template: repeat(3, 1fr) /repeat(2, 1fr);
@@ -154,16 +160,35 @@ button {
 }
 
 .card {
-
+    display: flex;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 3px 5px rgb(57, 63, 72, 0.3);
-    padding: 15px;
 }
 
-.card > p:first-child {
+.card-bar {
+    min-width: 10px;
+    border-radius: 40px 0 0 40px;
+    background-color: black;
+}
+
+.card-content {
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card-content > div > p:first-child {
     font-weight: bold;
 }
+
+.card-content > div:last-child {
+    text-align: end;
+}
+
 
 .right {
     grid-column: 2/3;
